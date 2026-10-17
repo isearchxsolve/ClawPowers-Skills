@@ -165,7 +165,7 @@
   },
   "webmcp-payments": {
     "title": "WebMCP Payments",
-    "summary": "Payments workflow wrapper for handling HTTP 402 Payment Required responses through agentpay-mcp within approved spending limits.",
+    "summary": "PAUSED — payment rails disabled for security maintenance pending contract-level enforcement. Do not use agentpay-mcp.",
     "when_to_use": [
       "when a workflow hits an HTTP 402 payment-required response",
       "when an agent needs to decide whether a micropayment is allowed",
