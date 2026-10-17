@@ -1,6 +1,6 @@
 ---
 name: webmcp-payments
-description: "PAUSED — payment rails disabled for security maintenance. Do not route HTTP 402 / micropayments through agentpay-mcp or related packages until contract-level enforcement is live and this skill is unpaused."
+description: "PAUSED. Paused for security maintenance. Do not use in production."
 metadata:
   hermes:
     tags: [finance, clawpowers-catalog, hermes-compatible, paused]
@@ -8,21 +8,11 @@ metadata:
 ---
 
 <!-- generated-by: scripts/generate_hermes_wrappers.py -->
-<!-- manually updated 2026-10-17: payment rails pause (Bill GO) -->
+<!-- manually updated 2026-10-17: pause notice -->
 
-# WebMCP Payments — PAUSED
+# WebMCP Payments: PAUSED
 
-**Status: PAUSED (2026-10-17).** Payment rails are paused for security maintenance pending contract-level enforcement (Safe + Zodiac Roles / Delay + AgentSpendModule).
-
-## Do not use
-
-- Do **not** install or invoke `agentpay-mcp`, `agentwallet-sdk`, or `webmcp-payments` for live spend from this skill.
-- Do **not** set `AGENT_PRIVATE_KEY` / hot-wallet keys to “make payments work” while this pause is in effect.
-- Do **not** treat HTTP 402 responses as an automatic pay-and-retry loop via AgentPay MCP.
-
-## When this skill may return
-
-After contract-level agent spend controls are proven (testnet+) and maintainers explicitly unpause this skill and the related npm packages.
+Paused for security maintenance. Do not use in production.
 
 ## Source of truth
 
@@ -31,4 +21,4 @@ After contract-level agent spend controls are proven (testnet+) and maintainers 
 
 ## Compatibility boundary
 
-This file remains on the Hermes-compatible `skills/` surface so agents discover the **pause**, not a working payment path.
+This file remains on the Hermes-compatible `skills/` surface so agents discover the pause, not a working payment path.
