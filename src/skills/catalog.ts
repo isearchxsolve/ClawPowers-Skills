@@ -426,7 +426,7 @@ export const SKILLS_CATALOG: SkillEntry[] = [
   },
   {
     name: 'webmcp-payments',
-    description: 'PAUSED — payment rails disabled for security maintenance pending contract-level enforcement. Do not use agentpay-mcp / agentwallet-sdk / webmcp-payments until unpaused.',
+    description: 'Paused for security maintenance. Do not use in production.',
     source: 'managed',
     category: 'finance',
     status: 'paused',
