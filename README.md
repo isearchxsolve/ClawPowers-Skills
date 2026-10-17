@@ -153,7 +153,7 @@ Exported helpers include `calculateTransactionFee`, `createPaymentHeader`, `gene
                                               │         PaymentExecutor           │
                                               │  ┌───────────┐  ┌─────────────┐  │
                                               │  │ MCP Client │  │ Audit Log   │  │
-                                              │  │ (agentpay) │  │ (append-only│  │
+                                              │  │ (external) │  │ (append-only│  │
                                               │  └─────┬─────┘  └─────────────┘  │
                                               └───────┬───────────────────────────┘
                                                       │
