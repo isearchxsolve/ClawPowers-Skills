@@ -224,6 +224,7 @@ export function searchSkillCatalog(failure: FailureTrace): CandidateSolution[] {
   const relevantTokens = new Set([...errorTokens, ...taskTokens]);
 
   return SKILLS_CATALOG
+    .filter(skill => skill.status !== 'paused')
     .filter(skill => {
       const haystackTokens = new Set(
         tokenizeWords(`${skill.name} ${skill.description} ${skill.category}`)
